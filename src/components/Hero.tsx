@@ -1,12 +1,41 @@
-import React from 'react'
-
-const Hero = () => {
-    return (
-        <section id="hero" className="w-full h-screen flex items-center justify-center">
-            <h1 className="text-6xl font-bold chango">
-                Pass Your French (2026 Guide)
-            </h1>
-        </section>
-    )
+:root {
+  --bg-teal: #1abc9c;
+  --bg-neutral: #faf3dd;
+  --bg-yellow: #f9c77f;
+  --bg-spring: #00a896;
+  --bg-green: #00a896;
+  --bg-cream: #fff8e7;
+  --coral: #eb83a1;
+  --text-dark: #333;
+  --text-light: #fff;
 }
-export default Hero
+
+body, #root {
+  min-height: 100vh;
+  background: linear-gradient(
+          120deg,
+          var(--bg-neutral) 5%,
+          var(--bg-spring) 45%,
+          var(--bg-green) 60%
+  );
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.frijole {
+  font-family: 'Frijole', cursive;
+}
+
+.chango {
+  font-family: 'Chango', cursive;
+}
+
+h1 {
+  color: var(--coral);
+  font-size:  clamp(2rem, 3vw, 4rem);
+}
+
+
+
