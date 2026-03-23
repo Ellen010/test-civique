@@ -5,7 +5,7 @@
   --bg-spring: #00a896;
   --bg-green: #00a896;
   --bg-cream: #fff8e7;
-  --coral: #ff6b6b;
+  --coral: #eb83a1;
   --text-dark: #333;
   --text-light: #fff;
 }
@@ -34,6 +34,7 @@ body, #root {
 
 h1 {
   color: var(--coral);
+  font-size:  clamp(2rem, 3vw, 4rem);
 }
 
 
