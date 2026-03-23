@@ -1,25 +1,24 @@
-export default defineConfig([
+// eslint.config.cjs
+const { defineConfig, globalIgnores } = require('eslint/config')
+const tseslint = require('typescript-eslint')
+const reactX = require('eslint-plugin-react-x')
+const reactDom = require('eslint-plugin-react-dom')
+
+module.exports = defineConfig([
   globalIgnores(['dist']),
+
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
       tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
+      reactX.configs['recommended-typescript'],
+      reactDom.configs.recommended,
     ],
     languageOptions: {
       parserOptions: {
         project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
+        tsconfigRootDir: __dirname,
       },
-      // other options...
     },
   },
 ])
