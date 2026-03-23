@@ -5,7 +5,7 @@
   --bg-spring: #00a896;
   --bg-green: #00a896;
   --bg-cream: #fff8e7;
-  --bg-coral: #ff6b6b;
+  --coral: #ff6b6b;
   --text-dark: #333;
   --text-light: #fff;
 }
@@ -24,6 +24,17 @@ body, #root {
 }
 
 
+.frijole {
+  font-family: 'Frijole', cursive;
+}
+
+.chango {
+  font-family: 'Chango', cursive;
+}
+
+h1 {
+  color: var(--coral);
+}
 
 
 
