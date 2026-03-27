@@ -1,11 +1,15 @@
 import React from 'react'
+import Puppy from '../../public/puppy-one.png'
 
 const Hero = () => {
     return (
         <section id="hero" className="w-full h-screen flex items-center justify-center">
-            <h1 className="text-8xl font-bold chango">
-                Pass Your French (2026 Guide)
-            </h1>
+            <div >
+                <h1 className="text-8xl font-bold chango">
+                    Pass Your French (2026 Guide)
+                </h1>
+                <img src={Puppy} alt="Cute puppy smilling and holding french flag" className="puppy" />
+            </div>
         </section>
     )
 }
