@@ -13,21 +13,43 @@
   --coral: #eb83a1;
   --text-dark: #333;
   --text-light: #fff;
+  --bg-first: #F6DFD5;
+  --bg-second: #EEBFAA;
+  --bg-third: #DC7E56;
+  --bg-fourth: #D45E2B;
+
 }
 
 /* Global body styles */
 body, #root {
+  min-height: 100vh;
   background: linear-gradient(
           120deg,
-          var(--bg-neutral) 5%,
-          var(--bg-spring) 45%,
-          var(--bg-green) 60%
+          var(--bg-third) 2%,
+          var(--bg-first) 25%,
+          var(--bg-second) 80%,
+          var(--bg-fourth) 98%
   );
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/*{
+"red-ochre": {
+"50": "#fbefea",
+"100": "#f6dfd5",
+"200": "#eebfaa",
+"300": "#e59e80",
+"400": "#dc7e56",
+"500": "#d45e2b",
+"600": "#a94b23",
+"700": "#7f381a",
+"800": "#552611",
+"900": "#2a1309",
+"950": "#1e0d06"
+}
+}*/
 
 @layer utilities {
   .flex-center {
@@ -49,7 +71,7 @@ body, #root {
   }
 
   h1 {
-    color: var(--coral);
+    color: var(--bg-fourth);
     font-size: clamp(2rem, 3vw, 4rem);
   }
 }
